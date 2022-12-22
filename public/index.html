@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mario Velasquez &mdash; Frontend Developer</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.min.css">
+    <link rel="stylesheet" href="css/vendor/aos.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.14.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.14.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.14.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <!-- <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style> -->
+  </head>
+  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+    <nav class="unslate_co--site-mobile-menu">
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex ml-auto js-menu-toggle">
+          <span class="close-label">Close</span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+        </a>
+      </div>
+      <div class="site-mobile-inner"></div>
+    </nav>
+
+
+    <div class="unslate_co--site-wrap">
+
+      <div class="unslate_co--site-inner">
+
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+        <!-- END lines -->
+      
+      <nav class="unslate_co--site-nav site-nav-target">
+
+        <div class="container">
+        
+          <div class="row align-items-center justify-content-between text-left">
+            <div class="col-md-5 text-right">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li class="has-children">
+                  <a href="#home-section" class="nav-link">Home</a>
+                </li>
+                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+              </ul>
+            </div>
+            <div class="site-logo pos-absolute">
+              <a href="index.html" class="unslate_co--site-logo">MV<span>.</span></a>
+            </div>
+            <div class="col-md-5 text-right text-lg-left">
+              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                <li><a href="#skills-section" class="nav-link">Skills</a></li>
+                <li><a href="#testimonial-section" class="nav-link">Testimonial</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+
+              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                <li><a href="#" class="js-menu-toggle">Menu</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </nav>
+      <!-- END nav -->
+
+      <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg_2.jpg');" id="home-section">
+        <div class="container">
+          <div class="row align-items-center">
+              
+            <div class="col-md-7 mx-auto text-center">
+              <h1 class="heading gsap-reveal-hero">Mario Velasquez</h1>
+              <h2 class="subheading gsap-reveal-hero">I am Mario Velasquez. A Frontend Developer Based In Guatemala</h2>
+            </div>
+
+          </div>
+        </div>
+
+
+        <a href="#portfolio-section" class="mouse-wrap smoothscroll">
+          <span class="mouse">
+            <span class="scroll"></span>
+          </span>
+          <span class="mouse-label">Scroll</span>
+        </a>
+
+      </div>
+      <!-- END .cover-v1 -->
+
+
+      <div class="unslate_co--section" id="portfolio-section">
+        <div class="container">
+          
+          
+          <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+          <div id="portfolio-single-holder"></div>
+
+          <div class="portfolio-wrapper">
+
+            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
+              <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolio</span></h2>
+
+              <a href="#" class="text-white js-filter d-inline-block d-lg-none">Filter</a>
+              
+              <div class="filter-wrap">
+                <div class="filter ml-auto" id="filters">
+                  <a href="#" class="active" data-filter="*">All</a>
+                  <a href="#" data-filter=".web">Web</a>
+                  <a href="#" data-filter=".mobile">Mobile</a>
+                </div>
+              </div>
+            </div>
+
+
+            
+            <div id="posts" class="row gutter-isotope-item">
+
+              <div class="item web mobile col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="portfolio-chatme.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Chat Me</h3>
+                        <p>Web, Websocket, Angular, NodeJS</p>
+                      </div>
+                    </div>
+                    <img src="images/logo-chatme.png" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+              </div>
+
+              <div class="item mobile col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
+                <a href="portfolio-baq.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>B´AQ´</h3>
+                        <p>Mobile, Ionic, Angular, Firebase</p>
+                      </div>
+                    </div>
+                    <img src="images/logo-baq.svg" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+              </div>
+
+              <div class="item mobile col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="portfolio-baq-cms.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>B´AQ´ CMS</h3>
+                        <p>Mobile, Ionic, Angular, Firebase</p>
+                      </div>
+                    </div>
+                    <img src="images/logo-baq-cms.svg" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+              </div>
+
+              <div class="item mobile col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+
+                <a href="portfolio-texaco-eds.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="5">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Mi EDS Texaco</h3>
+                        <p>Mobile, Unity, C#</p>
+                      </div>
+                    </div>
+                    <img src="images/logo-texaco.png" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+
+              </div>
+
+              <div class="item web col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="portfolio-eli.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="6">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>ELI MediK</h3>
+                        <p>Web, Angular, NodeJS, MySQL</p>
+                      </div>
+                    </div>
+                    <img src="images/logo-eli.png" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+              </div>
+
+              <div class="item web col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                <a href="portfolio-mv.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="6">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Mario Velasquez Portfolio</h3>
+                        <p>HTML, CSS, JQuery, BootStrap</p>
+                      </div>
+                    </div>
+                    <img src="images/logo-mv.png" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+              </div>
+
+            </div>
+            
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="unslate_co--section">
+        <div class="container">
+          <div class="owl-carousel logo-slider">
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-bluedevs.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-care.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-techo.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="unslate_co--section" id="about-section">
+        <div class="container">
+          
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
+            <span class="gsap-reveal">
+            <img src="images/divider.png" alt="divider" width="76">
+            </span>
+          </div>
+          
+
+          <div class="row mt-5 justify-content-between">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+              <figure class="dotted-bg gsap-reveal-img ">
+                <img src="images/mario_velasquez.jpg" alt="Image" class="img-fluid">
+              </figure>
+            </div>
+            <div class="col-lg-4 pr-lg-5">
+              <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Software and App Developer</span></h3>
+              <p class="lead gsap-reveal">Future Computer and Systems Engineer who has developed skills and experience in the area of database and web development working around SCRUM, through college education developing Backend with C#, PHP and NodeJS programming languages and Frontend with Angular, Ionic and JavaScript based on UI/UX designs.</p>
+              <p class="mb-4 gsap-reveal">Experience gained in databases through the use of MySQL, MongoDB and Database as a Service with Firebase. Version Control System with Git using <a href="https://github.com/Mario991012">Github</a>.</p>
+              <p class="gsap-reveal"><a href="./files/Mario Velasquez Resume.pdf" class="btn btn-outline-pill btn-custom-light" download="Frontend Developer Mario Velasquez Resume">Download my CV</a></p>
+              <p class="gsap-reveal"><a href="./files/Mario Velasquez Resume Harvard.pdf" class="btn btn-outline-pill btn-custom-light" download="Frontend Developer Mario Velasquez Resume Harvard">Download my CV (Harvard)</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="unslate_co--section" id="services-section">
+        <div class="container">
+
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Experience</span></h2>
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+
+          <div class="row gutter-v3">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                <div class="wrap-icon mb-3">
+                  <img src="images/svg/001-options.svg" alt="Image" width="45">
+                </div>
+                <h3>Front <br> Developer</h3>
+                <h4>BOWPI</h4>
+                <h5>Oct. 2021 - Present</h5>
+                <p>Maintenance, improvement, optimization and development of code and new requirements and components of web systems with Angular.</p>
+              </div> 
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                <div class="wrap-icon mb-3">
+                  <img src="images/svg/002-chat.svg" alt="Icon" width="45">
+                </div>
+                <h3>Freelance <br> Software Developer</h3>
+                <h4>BlueDevs</h4>
+                <h5>Dic. 2021 - Present</h5>
+                <p>Development of new requirements of eCommerce with Wordpress and WooCommerce API, static sites and mobile apps.</p>
+              </div> 
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                <div class="wrap-icon mb-3">
+                  <img src="images/svg/006-goal.svg" alt="Image" class="img-fluid" width="45">
+                </div>
+                <h3>Full Stack <br> Developer</h3>
+                <h4>BlueDevs</h4>
+                <h5>Oct. 2020 - Oct. 2021</h5>
+                <p>Development of medical records system with Angular, static sites with pure HTML and Web API's with ASP.NET and NodeJS.</p>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="unslate_co--section section-counter" id="skills-section">
+        <div class="container">
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+
+
+          <div class="row pt-5">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="95">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Angular</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="95">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Ionic</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="90">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Typescript</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="100">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Angular Material</span>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="90">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Bootstrap</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="90">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">Node.js</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="100">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">HTML/CSS</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div class="counter-v1 text-center">
+                <span class="number-wrap">
+                  <span class="number number-counter" data-number="90">0</span>
+                  <span class="append-text">%</span>
+                </span>
+                <span class="counter-label">C#</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END .counter -->
+
+
+      <div class="unslate_co--section" id="testimonial-section">
+        <div class="container">
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Testimonials</span></h2>
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+        </div>
+
+        <div class="owl-carousel testimonial-slider" data-aos="fade-up">
+          <div>
+            <div class="testimonial-v1">
+              <div class="testimonial-inner-bg">
+                <span class="quote">&ldquo;</span>
+                <blockquote>
+                  I have had the opportunity to work on several projects with Mario, in which he has always shown great motivation to achieve the objectives set by performing quality work accompanied by timely communication and attention to detail. I have been able to verify his commitment not only with the assigned tasks but with each project in which he has participated, always looking to contribute more by providing optimal and maintainable solutions.
+                </blockquote>
+              </div>
+              
+              <div class="testimonial-author-info">
+                <img src="images/jonathan_garcia.jpg" alt="Image">
+                <h3>Jonathan García</h3>
+                <span class="d-block position">Design and Development Engineer @BOWPI</span>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <div class="testimonial-v1">
+              <div class="testimonial-inner-bg">
+                <span class="quote">&ldquo;</span>
+                <blockquote>
+                  A software engineer who is passionate to learn new things and technologies, ready for new challenges because learning never ends.<br>Very careful to details to provide an optimal solution or service.<br>Recommended for any type of frontend project.
+                </blockquote>
+              </div>
+              
+              <div class="testimonial-author-info">
+                <img src="images/testimonials__marcos_calderon.jpeg" alt="Image">
+                <h3>Marcos Calderón</h3>
+                <span class="d-block position">App Dev & support engineer II Angular | Node | Typescript | Flutter | C# | PostgreSQL @Conduent</span>
+              </div>
+
+            </div>
+          </div>
+          <div>
+            <div class="testimonial-v1">
+              <div class="testimonial-inner-bg">
+                <span class="quote">&ldquo;</span>
+                <blockquote>
+                  Mario is a very integrated, high performance person who works long hours to achieve a quality project. <br>He is always courteous and punctual with his commitments. <br>I would hire him again for future Frontend work in Angular without hesitation.
+                </blockquote>
+              </div>
+              
+              <div class="testimonial-author-info">
+                <img src="images/jose_jorge_diaz.jpg" alt="Image">
+                <h3>José Jorge Díaz</h3>
+                <span class="d-block position">DevOps Engineer @BAM</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- END testimonial -->
+
+
+      <div class="unslate_co--section" id="contact-section">
+        <div class="container">
+          <div class="section-heading-wrap text-center mb-5">
+            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Contact Me</span></h2>
+            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+          </div>
+
+
+          <div class="row justify-content-between">
+
+            <div class="col-md-12">
+              <div class="contact-info-v1" style="display: inline;">
+                <div class="gsap-reveal d-block">
+                  <span class="d-block contact-info-label">Email</span>
+                  <a href="mailto: mvelasquezb99@gmail.com" class="contact-info-val">mvelasquezb99@gmail.com</a><br>
+                  <span class="d-block contact-info-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/mario-velasquez-38b7a015a/" class="contact-info-val">Mario Andrés Velasquez</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div> <!-- END .unslate_co-site-inner -->
+
+      <footer class="unslate_co--footer unslate_co--section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              
+              <div class="footer-site-logo"><a href="#">MV<span>.</span></a></div>
+
+              <ul class="footer-site-social">
+                <li><a href="https://www.linkedin.com/in/mario-velasquez-38b7a015a/">LinkedIn</a></li>
+                <li><a href="https://github.com/Mario991012">Github</a></li>
+              </ul>
+
+              <p class="site-copyright">
+                
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script> All rights reserved | This template is made with <i class="icon-heart"
+                  aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    </div>
+
+    
+    <!-- Loader -->
+    <div id="unslate_co--overlayer"></div>
+    <div class="site-loader-wrap">
+      <div class="site-loader"></div>
+    </div>
+
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
