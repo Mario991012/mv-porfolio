@@ -17,7 +17,7 @@ jobs:
         run: npm install -g firebase-tools
 
       - name: Login to Firebase
-        run: firebase login --no-interactive --ci
+        run: firebase login --ci
 
       - name: Build and Deploy
         run: |
