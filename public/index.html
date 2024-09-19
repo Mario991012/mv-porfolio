@@ -368,6 +368,20 @@
         </div>
       </div>
 
+      <!-- Freelance Hire Banner -->
+      <div class="unslate_co--section" id="hire-section" style="background-image: url('images/mario_velasquez_banner.jpg'); background-size: cover; background-position: center; padding: 50px 0; position: relative; min-height: 500px; display: flex; align-items: center; justify-content: center;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); filter: blur(5px); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2; text-align: center;">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h2 class="heading-h2 text-center divider"><span>Need a Project Done?</span></h2>
+              <p class="lead">I am available for freelance hire. Let's bring your ideas to life with professional development and creative solutions.</p>
+              <p><a href="#contact-section" class="btn btn-outline-pill btn-custom-light" id="scroll-to-contact">Contact Me for a Quote</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Experience -->
       <div class="unslate_co--section" id="experience-section">
         <div class="container">
@@ -788,7 +802,14 @@
 
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+      document.getElementById('scroll-to-contact').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        document.querySelector('#contact-section').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
