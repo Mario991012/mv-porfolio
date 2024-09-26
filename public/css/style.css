@@ -949,6 +949,10 @@ a, a:hover {
   transform: scale(1);
 }
 
+.portfolio-item:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
 .portfolio-item:hover img {
   -webkit-transform: scale(1.09);
   -ms-transform: scale(1.09);
