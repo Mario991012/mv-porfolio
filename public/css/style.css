@@ -2142,3 +2142,21 @@ span.error {
   background-color: #f06595;
   cursor: pointer;
 }
+
+.cover-v1 {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  animation: zoomEffect 5s ease-in-out;
+  transform-origin: center center;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
