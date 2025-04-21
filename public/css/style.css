@@ -2148,7 +2148,7 @@ span.error {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  animation: zoomEffect 5s ease-in-out;
+  /* animation: zoomEffect 5s ease-in-out; */
   transform-origin: center center;
 }
 
