@@ -2143,6 +2143,7 @@ span.error {
   cursor: pointer;
 }
 
+/* added cover-v1 for zoom animation at the header */
 .cover-v1 {
   overflow: hidden;
   background-size: cover;
