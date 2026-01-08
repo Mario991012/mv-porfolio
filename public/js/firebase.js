@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'remoteConfig',
         'performance',
       ].filter(feature => typeof app[feature] === 'function');
-      loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      // loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
     } catch (e) {
       console.error(e);
-      loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      // loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
     }
   });
